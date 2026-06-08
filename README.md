@@ -1,10 +1,4 @@
-# GPDBSCAN Reproducibility Package
-
-This repository contains the code and data files used for the manuscript:
-
-**Grid-Based Optimization for DBSCAN Clustering with Periodic Boundary Conditions**
-
-The proposed method is GPDBSCAN (Grid-based Preprocessing DBSCAN). It uses grid partitioning to identify boundary-adjacent regions, selectively generates periodic replicas, applies DBSCAN to the augmented data, and merges periodic-equivalent cluster labels.
+The proposed method is GPDBSCAN. It uses grid partitioning to identify boundary-adjacent regions, selectively generates periodic replicas, applies DBSCAN to the augmented data, and merges periodic-equivalent cluster labels.
 
 ## Code
 
@@ -13,19 +7,6 @@ The main implementation is:
 ```text
 src/dbscan_pbc/dbscan_pbc_grid.py
 ```
-
-The experiments reported in the manuscript use the default GPDBSCAN path:
-
-```python
-GPDBSCAN(eps=eps, min_samples=min_samples).fit(
-    X,
-    pbc_lower=pbc_lower,
-    pbc_upper=pbc_upper
-)
-```
-
-The optional `use_grid` mode is retained for exploratory use and was not used for the reported manuscript results.
-
 ## Requirements
 
 The code was written in Python and requires:
@@ -37,19 +18,7 @@ scikit-learn
 matplotlib
 ```
 
-Install dependencies with:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-or manually:
-
-```bash
-python -m pip install numpy pandas scikit-learn matplotlib
-```
-
-## Reproducing the Experiments
+## Experiments
 
 ### Representative synthetic datasets
 
@@ -140,15 +109,4 @@ data/ibtracs/source_note.txt
 
 ## Notes
 
-Runtime is measured using `time.perf_counter()`. Peak Python memory is measured using `tracemalloc`. Small differences from the reported values may occur because of hardware, Python version, and operating-system differences.
-
-Old demonstration scripts, exploratory parameter-search files, cache files, and unused intermediate figures are not required to reproduce the manuscript results.
-
-## Code Availability
-
-After Zenodo deposition, replace the placeholder below with the assigned DOI:
-
-```text
-The source code and data required to reproduce the experiments reported in this study have been deposited in Zenodo and are available at: [DOI].
-```
-
+Runtime is measured using `time.perf_counter()`. Peak Python memory is measured using `tracemalloc`. Differences from the reported values may occur because of hardware, Python version, and operating-system differences.
