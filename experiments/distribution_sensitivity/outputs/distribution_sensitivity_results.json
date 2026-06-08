@@ -1,0 +1,80 @@
+[
+  {
+    "distribution": "Interior-concentrated",
+    "n": 5000,
+    "k": 400,
+    "k_over_n": 0.08,
+    "n_over_k": 12.5,
+    "method": "PBC-DBSCAN",
+    "runtime_mean_s": 0.6456864200000002,
+    "runtime_std_s": 0.01574347524713043,
+    "clusters": 2,
+    "noise_points": 1,
+    "observed_speedup": 2.792767613491172
+  },
+  {
+    "distribution": "Interior-concentrated",
+    "n": 5000,
+    "k": 400,
+    "k_over_n": 0.08,
+    "n_over_k": 12.5,
+    "method": "GPDBSCAN",
+    "runtime_mean_s": 0.23119948000000007,
+    "runtime_std_s": 0.00882655805889235,
+    "clusters": 2,
+    "noise_points": 1,
+    "observed_speedup": 2.792767613491172
+  },
+  {
+    "distribution": "Uniform",
+    "n": 5000,
+    "k": 954,
+    "k_over_n": 0.1908,
+    "n_over_k": 5.241090146750524,
+    "method": "PBC-DBSCAN",
+    "runtime_mean_s": 0.28755383999999984,
+    "runtime_std_s": 0.0013938256088909561,
+    "clusters": 1,
+    "noise_points": 0,
+    "observed_speedup": 1.91202857704817
+  },
+  {
+    "distribution": "Uniform",
+    "n": 5000,
+    "k": 954,
+    "k_over_n": 0.1908,
+    "n_over_k": 5.241090146750524,
+    "method": "GPDBSCAN",
+    "runtime_mean_s": 0.15039201999999996,
+    "runtime_std_s": 0.0028754035415927168,
+    "clusters": 1,
+    "noise_points": 0,
+    "observed_speedup": 1.91202857704817
+  },
+  {
+    "distribution": "Boundary-concentrated",
+    "n": 5000,
+    "k": 3500,
+    "k_over_n": 0.7,
+    "n_over_k": 1.4285714285714286,
+    "method": "PBC-DBSCAN",
+    "runtime_mean_s": 0.36270573999999983,
+    "runtime_std_s": 0.006482855150549147,
+    "clusters": 2,
+    "noise_points": 0,
+    "observed_speedup": 1.5299594387892157
+  },
+  {
+    "distribution": "Boundary-concentrated",
+    "n": 5000,
+    "k": 3500,
+    "k_over_n": 0.7,
+    "n_over_k": 1.4285714285714286,
+    "method": "GPDBSCAN",
+    "runtime_mean_s": 0.23706886000000046,
+    "runtime_std_s": 0.00362303271072714,
+    "clusters": 2,
+    "noise_points": 0,
+    "observed_speedup": 1.5299594387892157
+  }
+]

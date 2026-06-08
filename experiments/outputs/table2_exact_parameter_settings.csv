@@ -1,0 +1,5 @@
+Dataset,Points n,Dimension d,True clusters,eps,min_samples,K-PBC k
+2D Double-Boundary,1500,2,2,0.05,3,2
+2D Four-Boundary,1000,2,3,0.05,5,3
+2D Non-convex,6000,2,3,0.035,3,3
+3D Periodic,3500,3,4,0.08,5,4

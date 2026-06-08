@@ -1,0 +1,396 @@
+{
+  "parameters": [
+    {
+      "Dataset": "2D Double-Boundary",
+      "Points n": 1500,
+      "Dimension d": 2,
+      "True clusters": 2,
+      "eps": 0.05,
+      "min_samples": 3,
+      "K-PBC k": 2
+    },
+    {
+      "Dataset": "2D Four-Boundary",
+      "Points n": 1000,
+      "Dimension d": 2,
+      "True clusters": 3,
+      "eps": 0.05,
+      "min_samples": 5,
+      "K-PBC k": 3
+    },
+    {
+      "Dataset": "2D Non-convex",
+      "Points n": 6000,
+      "Dimension d": 2,
+      "True clusters": 3,
+      "eps": 0.035,
+      "min_samples": 3,
+      "K-PBC k": 3
+    },
+    {
+      "Dataset": "3D Periodic",
+      "Points n": 3500,
+      "Dimension d": 3,
+      "True clusters": 4,
+      "eps": 0.08,
+      "min_samples": 5,
+      "K-PBC k": 4
+    }
+  ],
+  "metrics": [
+    {
+      "dataset": "2D Double-Boundary",
+      "n_points": 1500,
+      "dimension": 2,
+      "true_clusters": 2,
+      "method": "DBSCAN",
+      "pred_clusters": 4,
+      "noise_points": 9,
+      "ARI": 0.5613830212265828,
+      "NMI": 0.7126458424846077,
+      "V_measure": 0.7126458424846077,
+      "FMI": 0.7681046690331522,
+      "eps": 0.05,
+      "min_samples": 3,
+      "k_pbc_clusters": 2
+    },
+    {
+      "dataset": "2D Double-Boundary",
+      "n_points": 1500,
+      "dimension": 2,
+      "true_clusters": 2,
+      "method": "PBC-DBSCAN",
+      "pred_clusters": 3,
+      "noise_points": 8,
+      "ARI": 0.9866116463601846,
+      "NMI": 0.9654240332002452,
+      "V_measure": 0.9654240332002451,
+      "FMI": 0.9940189578440484,
+      "eps": 0.05,
+      "min_samples": 3,
+      "k_pbc_clusters": 2
+    },
+    {
+      "dataset": "2D Double-Boundary",
+      "n_points": 1500,
+      "dimension": 2,
+      "true_clusters": 2,
+      "method": "K-PBC",
+      "pred_clusters": 2,
+      "noise_points": 0,
+      "ARI": 1.0,
+      "NMI": 1.0,
+      "V_measure": 1.0,
+      "FMI": 1.0,
+      "eps": 0.05,
+      "min_samples": 3,
+      "k_pbc_clusters": 2
+    },
+    {
+      "dataset": "2D Double-Boundary",
+      "n_points": 1500,
+      "dimension": 2,
+      "true_clusters": 2,
+      "method": "GPDBSCAN",
+      "pred_clusters": 3,
+      "noise_points": 8,
+      "ARI": 0.9866116463601846,
+      "NMI": 0.9654240332002452,
+      "V_measure": 0.9654240332002451,
+      "FMI": 0.9940189578440484,
+      "eps": 0.05,
+      "min_samples": 3,
+      "k_pbc_clusters": 2
+    },
+    {
+      "dataset": "2D Four-Boundary",
+      "n_points": 1000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "DBSCAN",
+      "pred_clusters": 5,
+      "noise_points": 37,
+      "ARI": 0.5606446088861116,
+      "NMI": 0.7042993734183278,
+      "V_measure": 0.7042993734183279,
+      "FMI": 0.7048789858613118,
+      "eps": 0.05,
+      "min_samples": 5,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Four-Boundary",
+      "n_points": 1000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "PBC-DBSCAN",
+      "pred_clusters": 3,
+      "noise_points": 34,
+      "ARI": 0.9336171061561819,
+      "NMI": 0.8789725506437053,
+      "V_measure": 0.8789725506437053,
+      "FMI": 0.9571841402246619,
+      "eps": 0.05,
+      "min_samples": 5,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Four-Boundary",
+      "n_points": 1000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "K-PBC",
+      "pred_clusters": 3,
+      "noise_points": 0,
+      "ARI": 0.958035889592358,
+      "NMI": 0.9182149312306842,
+      "V_measure": 0.9182149312306842,
+      "FMI": 0.9731079523495022,
+      "eps": 0.05,
+      "min_samples": 5,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Four-Boundary",
+      "n_points": 1000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "GPDBSCAN",
+      "pred_clusters": 3,
+      "noise_points": 34,
+      "ARI": 0.9336171061561819,
+      "NMI": 0.8789725506437053,
+      "V_measure": 0.8789725506437053,
+      "FMI": 0.9571841402246619,
+      "eps": 0.05,
+      "min_samples": 5,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Non-convex",
+      "n_points": 6000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "DBSCAN",
+      "pred_clusters": 14,
+      "noise_points": 0,
+      "ARI": 0.5988855005598285,
+      "NMI": 0.7535096744187985,
+      "V_measure": 0.7535096744187985,
+      "FMI": 0.7328707489498812,
+      "eps": 0.035,
+      "min_samples": 3,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Non-convex",
+      "n_points": 6000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "PBC-DBSCAN",
+      "pred_clusters": 11,
+      "noise_points": 0,
+      "ARI": 0.9777778557910609,
+      "NMI": 0.9497219371060838,
+      "V_measure": 0.9497219371060839,
+      "FMI": 0.9857686408152362,
+      "eps": 0.035,
+      "min_samples": 3,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Non-convex",
+      "n_points": 6000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "K-PBC",
+      "pred_clusters": 3,
+      "noise_points": 0,
+      "ARI": 0.5706723417392854,
+      "NMI": 0.5627665065001102,
+      "V_measure": 0.5627665065001103,
+      "FMI": 0.7225922327316563,
+      "eps": 0.035,
+      "min_samples": 3,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "2D Non-convex",
+      "n_points": 6000,
+      "dimension": 2,
+      "true_clusters": 3,
+      "method": "GPDBSCAN",
+      "pred_clusters": 11,
+      "noise_points": 0,
+      "ARI": 0.9777778557910609,
+      "NMI": 0.9497219371060838,
+      "V_measure": 0.9497219371060839,
+      "FMI": 0.9857686408152362,
+      "eps": 0.035,
+      "min_samples": 3,
+      "k_pbc_clusters": 3
+    },
+    {
+      "dataset": "3D Periodic",
+      "n_points": 3500,
+      "dimension": 3,
+      "true_clusters": 4,
+      "method": "DBSCAN",
+      "pred_clusters": 7,
+      "noise_points": 19,
+      "ARI": 0.6251967716212352,
+      "NMI": 0.8087439612298196,
+      "V_measure": 0.8087439612298196,
+      "FMI": 0.7290244412297938,
+      "eps": 0.08,
+      "min_samples": 5,
+      "k_pbc_clusters": 4
+    },
+    {
+      "dataset": "3D Periodic",
+      "n_points": 3500,
+      "dimension": 3,
+      "true_clusters": 4,
+      "method": "PBC-DBSCAN",
+      "pred_clusters": 4,
+      "noise_points": 17,
+      "ARI": 0.9926381412098229,
+      "NMI": 0.9849275525792411,
+      "V_measure": 0.9849275525792411,
+      "FMI": 0.9945925641799296,
+      "eps": 0.08,
+      "min_samples": 5,
+      "k_pbc_clusters": 4
+    },
+    {
+      "dataset": "3D Periodic",
+      "n_points": 3500,
+      "dimension": 3,
+      "true_clusters": 4,
+      "method": "K-PBC",
+      "pred_clusters": 4,
+      "noise_points": 0,
+      "ARI": 0.6960722504016907,
+      "NMI": 0.8072707337018464,
+      "V_measure": 0.8072707337018467,
+      "FMI": 0.7841944101027184,
+      "eps": 0.08,
+      "min_samples": 5,
+      "k_pbc_clusters": 4
+    },
+    {
+      "dataset": "3D Periodic",
+      "n_points": 3500,
+      "dimension": 3,
+      "true_clusters": 4,
+      "method": "GPDBSCAN",
+      "pred_clusters": 4,
+      "noise_points": 17,
+      "ARI": 0.9926381412098229,
+      "NMI": 0.9849275525792411,
+      "V_measure": 0.9849275525792411,
+      "FMI": 0.9945925641799296,
+      "eps": 0.08,
+      "min_samples": 5,
+      "k_pbc_clusters": 4
+    }
+  ],
+  "runtime": [
+    {
+      "Dataset": "2D Double-Boundary",
+      "Method": "DBSCAN",
+      "Runtime mean (s)": 0.01356219999999988,
+      "Runtime std (s)": 0.0009290297035077583
+    },
+    {
+      "Dataset": "2D Double-Boundary",
+      "Method": "PBC-DBSCAN",
+      "Runtime mean (s)": 0.06903935999999992,
+      "Runtime std (s)": 0.0011104282340608537
+    },
+    {
+      "Dataset": "2D Double-Boundary",
+      "Method": "K-PBC",
+      "Runtime mean (s)": 0.0016047200000000928,
+      "Runtime std (s)": 0.0004270811831492294
+    },
+    {
+      "Dataset": "2D Double-Boundary",
+      "Method": "GPDBSCAN",
+      "Runtime mean (s)": 0.06096893999999988,
+      "Runtime std (s)": 0.00193956860744847
+    },
+    {
+      "Dataset": "2D Four-Boundary",
+      "Method": "DBSCAN",
+      "Runtime mean (s)": 0.006353219999999915,
+      "Runtime std (s)": 0.0009010553074036492
+    },
+    {
+      "Dataset": "2D Four-Boundary",
+      "Method": "PBC-DBSCAN",
+      "Runtime mean (s)": 0.0402035200000002,
+      "Runtime std (s)": 0.0027340569072353
+    },
+    {
+      "Dataset": "2D Four-Boundary",
+      "Method": "K-PBC",
+      "Runtime mean (s)": 0.0039432999999998945,
+      "Runtime std (s)": 0.001088775075486075
+    },
+    {
+      "Dataset": "2D Four-Boundary",
+      "Method": "GPDBSCAN",
+      "Runtime mean (s)": 0.03172165999999965,
+      "Runtime std (s)": 0.001308616935164796
+    },
+    {
+      "Dataset": "2D Non-convex",
+      "Method": "DBSCAN",
+      "Runtime mean (s)": 0.07978407999999959,
+      "Runtime std (s)": 0.002299413684398269
+    },
+    {
+      "Dataset": "2D Non-convex",
+      "Method": "PBC-DBSCAN",
+      "Runtime mean (s)": 0.14643804000000013,
+      "Runtime std (s)": 0.014904576550945094
+    },
+    {
+      "Dataset": "2D Non-convex",
+      "Method": "K-PBC",
+      "Runtime mean (s)": 0.01359520000000014,
+      "Runtime std (s)": 0.0029158236717955004
+    },
+    {
+      "Dataset": "2D Non-convex",
+      "Method": "GPDBSCAN",
+      "Runtime mean (s)": 0.22070283999999987,
+      "Runtime std (s)": 0.018111491552961607
+    },
+    {
+      "Dataset": "3D Periodic",
+      "Method": "DBSCAN",
+      "Runtime mean (s)": 0.060552639999999866,
+      "Runtime std (s)": 0.003512889289175278
+    },
+    {
+      "Dataset": "3D Periodic",
+      "Method": "PBC-DBSCAN",
+      "Runtime mean (s)": 0.3212925000000002,
+      "Runtime std (s)": 0.005724074068790418
+    },
+    {
+      "Dataset": "3D Periodic",
+      "Method": "K-PBC",
+      "Runtime mean (s)": 0.04367066000000008,
+      "Runtime std (s)": 0.0007267384935452781
+    },
+    {
+      "Dataset": "3D Periodic",
+      "Method": "GPDBSCAN",
+      "Runtime mean (s)": 0.24582006000000015,
+      "Runtime std (s)": 0.006935365223115247
+    }
+  ]
+}
