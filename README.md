@@ -110,3 +110,5 @@ data/ibtracs/source_note.txt
 ## Notes
 
 Runtime is measured using `time.perf_counter()`. Peak Python memory is measured using `tracemalloc`. Differences from the reported values may occur because of hardware, Python version, and operating-system differences.
+
+https://doi.org/10.5281/zenodo.20591136
